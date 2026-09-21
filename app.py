@@ -238,6 +238,10 @@ def logout():
     flash("Sesión cerrada correctamente.", "success")
     return redirect(url_for("inicio"))
 
+@app.errorhandler(400)
+def error_400(error):
+    return render_template("400.html"), 400
+
 @app.errorhandler(404)
 def pagina_no_encontrada(error):
     return render_template("404.html"), 404
@@ -256,7 +260,7 @@ def agregar_encabezados_seguridad(response):
 
     if os.environ.get("APP_ENV") == "production":
         response.headers["Strict-Transport-Security"] = "max-age=31536000; includeSubDomains"
-        
+
     return response
 
 with app.app_context():

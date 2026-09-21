@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Error 400 | CloudTask</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+    <header>
+        <div>
+            <h1>CloudTask</h1>
+            <p>Gestión segura y escalable de tareas en la nube</p>
+        </div>
+    </header>
+
+    <main>
+        <section class="error-page">
+            <div class="error-code">400</div>
+
+            <h2>Solicitud no válida</h2>
+
+            <p>
+                La solicitud no pudo ser procesada porque falta información
+                de seguridad o los datos enviados no son válidos.
+            </p>
+
+            <a href="{{ url_for('inicio') }}" class="btn-link btn-primary">
+                Volver al inicio
+            </a>
+        </section>
+    </main>
+
+    <footer>
+        <p>CloudTask - Proyecto de Computación en la Nube</p>
+    </footer>
+
+</body>
+
+</html>
