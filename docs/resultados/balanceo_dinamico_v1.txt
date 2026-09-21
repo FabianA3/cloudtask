@@ -1,0 +1,54 @@
+
+=== ROUND ROBIN ===
+Ciclo 01 | carga=10 | duración=2 | Nodo-1 | Nodo-1=10% | Nodo-2=0% | Nodo-3=0%
+Ciclo 02 | carga=35 | duración=5 | Nodo-2 | Nodo-1=10% | Nodo-2=35% | Nodo-3=0%
+Ciclo 03 | carga=15 | duración=2 | Nodo-3 | Nodo-1=0% | Nodo-2=35% | Nodo-3=15%
+Ciclo 04 | carga=40 | duración=4 | Nodo-1 | Nodo-1=40% | Nodo-2=35% | Nodo-3=15%
+Ciclo 05 | carga=20 | duración=3 | Nodo-2 | Nodo-1=40% | Nodo-2=55% | Nodo-3=0%
+Ciclo 06 | carga=30 | duración=5 | Nodo-3 | Nodo-1=40% | Nodo-2=55% | Nodo-3=30%
+Ciclo 07 | carga=10 | duración=2 | Nodo-1 | Nodo-1=50% | Nodo-2=20% | Nodo-3=30%
+Ciclo 08 | carga=45 | duración=4 | Nodo-2 | Nodo-1=10% | Nodo-2=45% | Nodo-3=30%
+Ciclo 09 | carga=15 | duración=3 | Nodo-3 | Nodo-1=0% | Nodo-2=45% | Nodo-3=45%
+Ciclo 10 | carga=25 | duración=2 | Nodo-1 | Nodo-1=25% | Nodo-2=45% | Nodo-3=45%
+Ciclo 11 | carga=35 | duración=4 | Nodo-2 | Nodo-1=25% | Nodo-2=80% | Nodo-3=15%
+Ciclo 12 | carga=20 | duración=3 | Nodo-3 | Nodo-1=0% | Nodo-2=35% | Nodo-3=20%
+Ciclo 13 | carga=10 | duración=2 | Nodo-1 | Nodo-1=10% | Nodo-2=35% | Nodo-3=20%
+Ciclo 14 | carga=40 | duración=5 | Nodo-2 | Nodo-1=10% | Nodo-2=75% | Nodo-3=20%
+Ciclo 15 | carga=30 | duración=3 | Nodo-3 | Nodo-1=0% | Nodo-2=40% | Nodo-3=30%
+
+--- Resumen ---
+Nodo-1: 5 tareas | 0.0% de carga
+Nodo-2: 5 tareas | 40.0% de carga
+Nodo-3: 5 tareas | 30.0% de carga
+Tareas asignadas: 15
+Tareas rechazadas: 0
+Carga máxima: 40.0%
+Carga mínima: 0.0%
+Diferencia de carga: 40.0 puntos
+
+=== BALANCEO ADAPTATIVO ===
+Ciclo 01 | carga=10 | duración=2 | Nodo-1 | Nodo-1=10% | Nodo-2=0% | Nodo-3=0%
+Ciclo 02 | carga=35 | duración=5 | Nodo-2 | Nodo-1=10% | Nodo-2=35% | Nodo-3=0%
+Ciclo 03 | carga=15 | duración=2 | Nodo-3 | Nodo-1=0% | Nodo-2=35% | Nodo-3=15%
+Ciclo 04 | carga=40 | duración=4 | Nodo-1 | Nodo-1=40% | Nodo-2=35% | Nodo-3=15%
+Ciclo 05 | carga=20 | duración=3 | Nodo-3 | Nodo-1=40% | Nodo-2=35% | Nodo-3=20%
+Ciclo 06 | carga=30 | duración=5 | Nodo-3 | Nodo-1=40% | Nodo-2=35% | Nodo-3=50%
+Ciclo 07 | carga=10 | duración=2 | Nodo-2 | Nodo-1=40% | Nodo-2=10% | Nodo-3=50%
+Ciclo 08 | carga=45 | duración=4 | Nodo-1 | Nodo-1=45% | Nodo-2=10% | Nodo-3=30%
+Ciclo 09 | carga=15 | duración=3 | Nodo-2 | Nodo-1=45% | Nodo-2=15% | Nodo-3=30%
+Ciclo 10 | carga=25 | duración=2 | Nodo-2 | Nodo-1=45% | Nodo-2=40% | Nodo-3=30%
+Ciclo 11 | carga=35 | duración=4 | Nodo-3 | Nodo-1=45% | Nodo-2=40% | Nodo-3=35%
+Ciclo 12 | carga=20 | duración=3 | Nodo-1 | Nodo-1=20% | Nodo-2=0% | Nodo-3=35%
+Ciclo 13 | carga=10 | duración=2 | Nodo-2 | Nodo-1=20% | Nodo-2=10% | Nodo-3=35%
+Ciclo 14 | carga=40 | duración=5 | Nodo-2 | Nodo-1=20% | Nodo-2=50% | Nodo-3=35%
+Ciclo 15 | carga=30 | duración=3 | Nodo-1 | Nodo-1=30% | Nodo-2=40% | Nodo-3=0%
+
+--- Resumen ---
+Nodo-1: 5 tareas | 30.0% de carga
+Nodo-2: 6 tareas | 40.0% de carga
+Nodo-3: 4 tareas | 0.0% de carga
+Tareas asignadas: 15
+Tareas rechazadas: 0
+Carga máxima: 40.0%
+Carga mínima: 0.0%
+Diferencia de carga: 40.0 puntos

@@ -1,0 +1,54 @@
+
+=== ROUND ROBIN ===
+Tarea 01 | carga=10 | Nodo-1 | carga nodo=10%
+Tarea 02 | carga=35 | Nodo-2 | carga nodo=35%
+Tarea 03 | carga=15 | Nodo-3 | carga nodo=15%
+Tarea 04 | carga=40 | Nodo-1 | carga nodo=50%
+Tarea 05 | carga=20 | Nodo-2 | carga nodo=55%
+Tarea 06 | carga=30 | Nodo-3 | carga nodo=45%
+Tarea 07 | carga=10 | Nodo-1 | carga nodo=60%
+Tarea 08 | carga=45 | Nodo-2 | carga nodo=100%
+Tarea 09 | carga=15 | Nodo-3 | carga nodo=60%
+Tarea 10 | carga=25 | Nodo-1 | carga nodo=85%
+Tarea 11 | carga=35 | Nodo-3 | carga nodo=95%
+Tarea 12 | carga=20 | RECHAZADA
+Tarea 13 | carga=10 | Nodo-1 | carga nodo=95%
+Tarea 14 | carga=40 | RECHAZADA
+Tarea 15 | carga=30 | RECHAZADA
+
+--- Resumen ---
+Nodo-1: 5 tareas | 95.0% de carga
+Nodo-2: 3 tareas | 100.0% de carga
+Nodo-3: 4 tareas | 95.0% de carga
+Tareas asignadas: 12
+Tareas rechazadas: 3
+Carga máxima: 100.0%
+Carga mínima: 95.0%
+Diferencia de carga: 5.0 puntos
+
+=== BALANCEO ADAPTATIVO ===
+Tarea 01 | carga=10 | Nodo-1 | carga nodo=10%
+Tarea 02 | carga=35 | Nodo-2 | carga nodo=35%
+Tarea 03 | carga=15 | Nodo-3 | carga nodo=15%
+Tarea 04 | carga=40 | Nodo-1 | carga nodo=50%
+Tarea 05 | carga=20 | Nodo-3 | carga nodo=35%
+Tarea 06 | carga=30 | Nodo-2 | carga nodo=65%
+Tarea 07 | carga=10 | Nodo-3 | carga nodo=45%
+Tarea 08 | carga=45 | Nodo-3 | carga nodo=90%
+Tarea 09 | carga=15 | Nodo-1 | carga nodo=65%
+Tarea 10 | carga=25 | Nodo-2 | carga nodo=90%
+Tarea 11 | carga=35 | Nodo-1 | carga nodo=100%
+Tarea 12 | carga=20 | RECHAZADA
+Tarea 13 | carga=10 | Nodo-2 | carga nodo=100%
+Tarea 14 | carga=40 | RECHAZADA
+Tarea 15 | carga=30 | RECHAZADA
+
+--- Resumen ---
+Nodo-1: 4 tareas | 100.0% de carga
+Nodo-2: 4 tareas | 100.0% de carga
+Nodo-3: 4 tareas | 90.0% de carga
+Tareas asignadas: 12
+Tareas rechazadas: 3
+Carga máxima: 100.0%
+Carga mínima: 90.0%
+Diferencia de carga: 10.0 puntos
