@@ -1,0 +1,60 @@
+
+============================================================
+ESCENARIO: Moderado
+============================================================
+
+Round Robin
+  Tareas asignadas:       15
+  Tareas rechazadas:      0
+  Tasa de rechazo:        0.00%
+  Desequilibrio promedio: 17.67 puntos
+  Desequilibrio máximo:   25.00 puntos
+  Carga máxima observada: 25.00%
+
+Adaptativo
+  Tareas asignadas:       15
+  Tareas rechazadas:      0
+  Tasa de rechazo:        0.00%
+  Desequilibrio promedio: 17.67 puntos
+  Desequilibrio máximo:   25.00 puntos
+  Carga máxima observada: 25.00%
+
+============================================================
+ESCENARIO: Alto
+============================================================
+
+Round Robin
+  Tareas asignadas:       15
+  Tareas rechazadas:      0
+  Tasa de rechazo:        0.00%
+  Desequilibrio promedio: 41.00 puntos
+  Desequilibrio máximo:   60.00 puntos
+  Carga máxima observada: 95.00%
+
+Adaptativo
+  Tareas asignadas:       15
+  Tareas rechazadas:      0
+  Tasa de rechazo:        0.00%
+  Desequilibrio promedio: 31.00 puntos
+  Desequilibrio máximo:   45.00 puntos
+  Carga máxima observada: 90.00%
+
+============================================================
+ESCENARIO: Pico
+============================================================
+
+Round Robin
+  Tareas asignadas:       11
+  Tareas rechazadas:      4
+  Tasa de rechazo:        26.67%
+  Desequilibrio promedio: 33.33 puntos
+  Desequilibrio máximo:   55.00 puntos
+  Carga máxima observada: 100.00%
+
+Adaptativo
+  Tareas asignadas:       11
+  Tareas rechazadas:      4
+  Tasa de rechazo:        26.67%
+  Desequilibrio promedio: 43.33 puntos
+  Desequilibrio máximo:   95.00 puntos
+  Carga máxima observada: 100.00%
