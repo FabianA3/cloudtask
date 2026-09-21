@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard | CloudTask</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+    <header>
+        <h1>CloudTask</h1>
+        <p>Panel de gestión de tareas</p>
+    </header>
+
+    <main>
+        {% with messages = get_flashed_messages(with_categories=true) %}
+        {% if messages %}
+        <div class="flash-container">
+            {% for category, message in messages %}
+            <div class="flash {{ category }}">
+                {{ message }}
+            </div>
+            {% endfor %}
+        </div>
+        {% endif %}
+        {% endwith %}
+        <section>
+            <h2>Bienvenido, {{ current_user.nombre }}</h2>
+
+            <p>
+                Has iniciado sesión correctamente. Desde este panel podrás
+                administrar tus tareas de forma segura.
+            </p>
+
+            <div class="dashboard-actions">
+                <a href="{{ url_for('nueva_tarea') }}" class="btn-link btn-primary">
+                    Crear nueva tarea
+                </a>
+
+                <a href="{{ url_for('logout') }}" class="btn-link btn-secondary">
+                    Cerrar sesión
+                </a>
+            </div>
+
+            <h3>Mis tareas</h3>
+
+            {% if tareas %}
+            {% for tarea in tareas %}
+            <div class="tarea">
+                <h4>{{ tarea.titulo }}</h4>
+
+                <p>
+                    {{ tarea.descripcion or "Sin descripción" }}
+                </p>
+
+                <p>
+                    <strong>Prioridad:</strong> {{ tarea.prioridad }}
+                </p>
+
+                <p>
+                    <strong>Estado:</strong> {{ tarea.estado }}
+                </p>
+
+                <p>
+                    <strong>Fecha:</strong>
+                    {{ tarea.fecha_creacion.strftime("%d/%m/%Y %H:%M") }}
+                </p>
+                <div class="task-actions">
+
+                    <a href="{{ url_for('editar_tarea', tarea_id=tarea.id) }}" class="btn-task btn-edit">
+                        Editar
+                    </a>
+
+                    <form method="POST" action="{{ url_for('eliminar_tarea', tarea_id=tarea.id) }}" class="delete-form">
+
+                        <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+
+                        <button type="submit" class="btn-task btn-delete">
+                            Eliminar
+                        </button>
+                    </form>
+
+                </div>
+            </div>
+            {% endfor %}
+            {% else %}
+            <p>Aún no tienes tareas registradas.</p>
+            {% endif %}
+
+        </section>
+    </main>
+
+    <footer>
+        <p>CloudTask - Proyecto de Computación en la Nube</p>
+    </footer>
+</body>
+
+</html>

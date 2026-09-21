@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar tarea | CloudTask</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+    <header>
+        <h1>CloudTask</h1>
+        <p>Gestión segura y escalable de tareas en la nube</p>
+    </header>
+
+    <main>
+        <section>
+            <h2>Editar tarea</h2>
+            <p>Modifica la información de tu tarea.</p>
+
+            <form method="POST">
+                {{ form.hidden_tag() }}
+
+                <div class="form-group">
+                    {{ form.titulo.label }}
+                    {{ form.titulo() }}
+
+                    {% for error in form.titulo.errors %}
+                        <span class="error">{{ error }}</span>
+                    {% endfor %}
+                </div>
+
+                <div class="form-group">
+                    {{ form.descripcion.label }}
+                    {{ form.descripcion() }}
+
+                    {% for error in form.descripcion.errors %}
+                        <span class="error">{{ error }}</span>
+                    {% endfor %}
+                </div>
+
+                <div class="form-group">
+                    {{ form.prioridad.label }}
+                    {{ form.prioridad() }}
+                </div>
+
+                <div class="form-group">
+                    {{ form.estado.label }}
+                    {{ form.estado() }}
+                </div>
+
+                {{ form.submit(class="btn", value="Actualizar tarea") }}
+            </form>
+
+            <p class="form-footer">
+                <a href="{{ url_for('dashboard') }}">Volver al Dashboard</a>
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p>CloudTask - Proyecto de Computación en la Nube</p>
+    </footer>
+</body>
+
+</html>
