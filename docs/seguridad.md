@@ -260,3 +260,9 @@ Entre las mejoras posibles se encuentran:
 - Políticas avanzadas de observabilidad y auditoría.
 
 Estas capacidades se consideran mejoras propuestas y no controles actualmente demostrados en la implementación.
+
+## 22. Referencias académicas
+
+Ministerio de Tecnologías de la Información y las Comunicaciones – MinTIC. (2021). *Guía técnica de computación en la nube (v.1.1).* Bogotá D.C.: MinTIC.
+
+La implementación de CloudTask adopta principios de seguridad tratados en la guía académica, especialmente la responsabilidad compartida, el control de acceso, el principio de mínimo privilegio, la protección de credenciales y secretos, el uso de comunicaciones seguras y la verificación de controles de seguridad.
