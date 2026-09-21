@@ -15,6 +15,15 @@
     </header>
 
     <main>
+        {% with messages = get_flashed_messages(with_categories=true) %}
+        {% if messages %}
+        {% for category, message in messages %}
+        <div class="flash {{ category }}">
+            {{ message }}
+        </div>
+        {% endfor %}
+        {% endif %}
+        {% endwith %}
         <section>
             <h2>Crear cuenta</h2>
             <p>Regístrate para comenzar a gestionar tus tareas.</p>
