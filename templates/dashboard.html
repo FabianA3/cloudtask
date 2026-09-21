@@ -39,9 +39,12 @@
                     Crear nueva tarea
                 </a>
 
-                <a href="{{ url_for('logout') }}" class="btn-link btn-secondary">
-                    Cerrar sesión
-                </a>
+                <form method="POST" action="{{ url_for('logout') }}">
+                    <input type="hidden" name="csrf_token" value="{{ csrf_token() }}">
+                    <button type="submit" class="btn-link btn-secondary">
+                        Cerrar sesión
+                    </button>
+                </form>
             </div>
 
             <h3>Mis tareas</h3>

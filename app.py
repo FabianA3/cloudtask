@@ -231,7 +231,7 @@ def eliminar_tarea(tarea_id):
     flash("Tarea eliminada correctamente.", "success")
     return redirect(url_for("dashboard"))
 
-@app.route("/logout")
+@app.route("/logout", methods=["POST"])
 @login_required
 def logout():
     logout_user()
